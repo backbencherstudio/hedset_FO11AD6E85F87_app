@@ -1,0 +1,42 @@
+name: flutter_newprojct
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  go_router: ^16.2.1
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.1.0  # Required for .svg files
+  intl: ^0.20.2
+  flutter_riverpod: ^2.6.1
+  flutter_screenutil: ^5.9.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  gsheets: ^0.5.0
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/logo.png
+    - assets/icons/Spinner Loading.svg
+    - assets/images/get_started_image.jpg
+    - assets/images/lifestyle.svg
+    - assets/images/main.png
+    - assets/images/meal_plan_image.jpg
