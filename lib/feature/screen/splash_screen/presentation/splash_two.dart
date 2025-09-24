@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_newprojct/core/constant/icons.dart';
+import 'package:flutter_newprojct/core/constant/image.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
@@ -39,7 +39,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                AppIcons.logo,
+                AppImage.logo,
                 width:238.w ,
                 height: 256.h,
                 fit:BoxFit.cover ,

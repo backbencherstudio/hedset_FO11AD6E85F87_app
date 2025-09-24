@@ -1,23 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_newprojct/core/constant/image.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class AppBackground extends StatelessWidget {
-  const AppBackground({super.key, required this.child});
+class AppBackgroundTwo extends StatelessWidget {
+  const AppBackgroundTwo({super.key, required this.child});
   final Widget child;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          AppImage.backgroundPng,
-          height: double.maxFinite,
-          width: double.maxFinite,
-          fit: BoxFit.cover,
+        Positioned.fill(
+          child: Image.asset(
+            AppImage.getStart,
+            fit: BoxFit.cover,
+          ),
+        ),
+        // Optional gradient overlay for better text visibility
+        Positioned.fill(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.black.withOpacity(0.3),
+                  Colors.black.withOpacity(0.6),
+                ],
+              ),
+            ),
+          ),
         ),
         SafeArea(child: child),
       ],
     );
   }
 }
-

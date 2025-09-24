@@ -23,7 +23,7 @@ class AppColors {
   static const Color onSurface = Colors.black;
 
   static const Color bottomNavBarBackground = Color(0xFFE8EAF6);
-  static const Color bgColor = Color(0xFFF5F6FA);
+
   static const Color secondaryTextColor = Color(0xFF555770);
   static const Color deActiveTextColor = Color(0xFFA0A0A0);
   static const Color primaryContainer = Color(0xFFE3E6F0);
@@ -46,13 +46,13 @@ class AppColors {
   static const Color textColor5 = Color(0xFFE9E9EA);
   static const Color textColor6 = Color(0xFF8F9BB3);
   static const Color textColor7 = Color(0xFFEB3D4D);
-  static const Color textColor8 = Color(0xFFA5A5AB);
+  static const Color textColor8 = Color(0xFF8A8A8A);
 
   static const Color customBox = Color(0xff27AE60);
-  static const Color secondaryAppColor = Color(0xFF5C6BC0);
+  static const Color secondaryAppColor = Color(0xFF777980);
   static const Color whiteBackgroundColor = Color(0xFFFFFFFF);
-  static const Color textContainerColor = Color(0xFF4A4C56);
-
+  static const Color textContainerColor = Color(0xFF333333);
+  static const Color bgColor = Color(0xFFF5F6FA);
   static const Color borderColor = Color(0xFFE8ECF4);
   static const Color borderColor2 = Color(0xFFF7F8F9);
 }

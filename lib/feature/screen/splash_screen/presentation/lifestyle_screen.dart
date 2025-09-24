@@ -3,6 +3,8 @@ import 'package:flutter_newprojct/core/constant/image.dart';
 import 'package:flutter_newprojct/feature/screen/splash_screen/presentation/app_background.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
+import '../../../../core/route/route_name.dart';
 import '../../../../core/theme/theme_extension/app_colors.dart';
 import '../../../common_widgets/custom_button.dart';
 
@@ -21,8 +23,8 @@ class LifeScreen extends StatelessWidget {
           children: [
             SvgPicture.asset(
               AppImage.lifeStyle,
-              width: 96.w,
-              height: 96.h,
+              width: 335.w,
+              height: 279.h,
               fit: BoxFit.cover,
             ),
             const SizedBox(height: 76),
@@ -30,7 +32,7 @@ class LifeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Checkbox(
-                  side: const BorderSide(color: AppColors.customBox, width: 2), // ✅ Normal border width
+                  side: const BorderSide(color: AppColors.customBox, width: 2),
                   checkColor: AppColors.onPrimary,
                   fillColor: MaterialStateProperty.all(Colors.cyan),
                   value: true,
@@ -57,12 +59,13 @@ class LifeScreen extends StatelessWidget {
                 border: Border.all(color: AppColors.customBox),
 
                 onPress: () {
-                  // TODO: Handle button press
+                  context.push(RouteName.getScreen);
                 },
                 style: style,
                 radius:24,
               ),
             ),
+            const SizedBox(height: 76),
           ],
         ),
       ),
